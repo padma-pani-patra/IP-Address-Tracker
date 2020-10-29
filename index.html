@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel ='stylesheet' href="style.css">
+        <title>IpaddressTracker</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <header class="input-container">
+                <h1>IP Address Tracker</h1>
+                <form class="search" action="#">
+                <input type="text" id='inputtext' placeholder='Search for any IP address or domain'>
+                <button id='search'>
+                <img src="images/icon-arrow.svg" alt="submit">
+                </button>
+                </form>
+               
+               
+            </header>
+            
+            <div id="data-row">
+             <div class="show">
+                <div class="address-container box">
+                    <h3>Ip Address</h3>
+                    <p id='address'>192.212.174.101</p>
+               
+                </div>
+                
+                <div class="location-container box">
+                    <h3>Location</h3>
+                     <p id='location'>Brooklyn,NY 10001</p>
+                 <span></span>
+                </div>
+                
+                <div class="timezone-container box">
+                    <h3>TimeZone</h3>
+                <p id='timezone'>UTc-05:00</p>
+                 <span></span>
+                </div>
+                 
+                
+                <div class="isp-container box">
+                    <h3>ISP</h3>
+                <p id='isp'>SpaceX<br>Starllink</p>
+                 </div>
+                
+            </div>
+                </div>
+                    
+           
+        </div>
+      <script src='iptracker.js'></script>
+    </body>
+</html>

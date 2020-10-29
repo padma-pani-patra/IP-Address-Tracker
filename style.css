@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1440px;
+    padding: 0 20px;
+}
+
+.input-container{
+    width:100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    place-items:center;
+    background-image: url(images/pattern-bg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    
+}
+.input-container h1{
+    color: white;
+    position: absolute;
+    top:10px;
+}
+.search{
+    position: relative;
+}
+.input-container input[type='text']{
+    width: 350px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid hsl(0, 6%, 24%);
+    outline: none;
+    margin-bottom: 20px;
+  
+    
+}
+
+
+  
+
+.input-container #search{
+    
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 80px;
+    padding: 15px 0px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: black;
+  
+}
+
+
+
+#data-row
+{
+   position: relative;
+    width: 100%;
+    
+}
+
+.show{
+   
+     width:60rem;
+    height: 7rem;
+    margin: 0 auto;
+    position: absolute;
+    left:150px;
+    
+    bottom: -50px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px white;
+    border-radius:10px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+        
+    
+}
+.show .box{
+    height: 100%;
+    padding: 20px 0;
+}
+.show .box p{
+    margin-top:10px;
+}
+
+.show span{
+
+    width:2px;
+    height: 30px;
+    background-color: hsl(0, 0%, 59%);
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    .input-container input[type="text"] {
+        width: 250px;
+    }
+    .show {
+        width: 80vw;;
+        display: block; 
+        transform: none;
+        height: auto;
+        left:20px;
+        bottom:-300px;
+    }
+    .show .box {
+        width: 100%;
+        text-align: center;
+    }
+}
